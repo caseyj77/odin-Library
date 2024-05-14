@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: radial-gradient(circle, #548ea2, #133161);
+    height: 100vh;
+    margin: 0;
+}
+
+#page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    grid-column: 1/3;
+    text-align: center;
+    margin: 15px;
+}
+
+#books {
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 2/4;
+    text-align: center;
+    margin: 15px;
+}
+
+table {
+    text-align: center; /* Aligns text in all cells to the center */
+    border: 1.5px solid #133a61;
+    background-color: #faad99;
+}
+th, td {
+    text-align: left; /* Aligns text in header and data cells to the left */
+    border: 1px solid #133a61;
+}
+
+tr:nth-child(even) {
+    background-color: #ead1ca; /* Light gray background for even rows */
+}
+
+tr:hover {
+    background-color: #ddd; /* Light gray background on hover */
+}
+
+.form-popup {
+    display: none;
+}
+
+button {
+    background-color: #9e5978;
+    color: #f2f2f2;
+    padding: 10px;
+    max-width: 120px;
+}
+
+
+input {
+    padding-left: 5px;
+    gap: 15px;
+    min-height: 30px;
+    align-items: center;
+}
+
+label {
+    color: #ead1ca;
+}

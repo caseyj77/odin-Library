@@ -7,8 +7,41 @@
     <title>My Little Library</title>
 </head>
 <body>
-    <div id="page" class="">
+    <div id="page" class="container">
+        <div id="header">
+            <h1>My Little Library</h1>
+        </div>
+        <div id="books">
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Read (Y/N)</th>
+                </tr>
+                <!-- Table rows will be dynamically added here -->
+            </table>
+            <button class="open-button" onclick="openForm()">Add Book</button>
+        </div>
 
+        <div class="form-popup" id="add-book" style="display:none;">
+            <form>
+                <label>Title:</label>
+                <input type="text" placeholder="Book Title">
+
+                <label>Author:</label>
+                <input type="text" placeholder="Book Author">
+
+                <label>Pages:</label>
+                <input type="text" placeholder="Number of Pages">
+
+                <label>Read:</label>
+                <input type="checkbox" id="readCheckbox">
+                
+                <button type="button" onclick="addBook()">Submit</button>
+                <button type="button" onclick="closeForm()">Close</button>
+            </form>
+        </div>
     </div>
     <script src="/scripts/main.js"></script>
 </body>
