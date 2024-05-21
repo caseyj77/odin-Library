@@ -1,14 +1,24 @@
 const myLibrary = [];
-
-function Book(title, author, pages, hasRead) {
+class Book {
+    constructor(title, author, pages, hasRead) {
     this.title = title;
     this.author = author;
     this.pages = pages;
     this.hasRead = hasRead;
+    }
 }
 
-function addBookToLibrary(book) {
-    myLibrary.push(book);
+let myBook = new Book('The Hobbit', 'J.R.R. Tolkien', 295, false);
+
+// function Book(title, author, pages, hasRead) {
+//     this.title = title;
+//     this.author = author;
+//     this.pages = pages;
+//     this.hasRead = hasRead;
+// }
+
+function addBookToLibrary(Book) {
+    myLibrary.push(Book);
 }
 
 function displayBooks() {
@@ -93,3 +103,5 @@ function addBook() {
         alert("Please fill out all fields.");
     }
 }
+
+console.log(myLibrary);
